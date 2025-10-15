@@ -1,0 +1,500 @@
+@font-face {
+    font-family: Insol;
+    src: url(assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+
+@font-face {
+    font-family: Sana;
+    src: url(assets/fonts/static/Inconsolata-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+  color: white;
+  font-family: Insol;
+  background:url(assets/images/background-desktop.png);
+  background-size: cover;
+background-position: center;
+
+
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+  
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 50px auto;
+    
+
+}
+
+.hero-text p {
+    font-size: 1rem;
+  margin: 0 auto;
+   width: 50%;
+    
+
+}
+
+
+.hero-text span {
+    background-image: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    color: transparent;
+    background-clip: text;
+}
+
+.hero-design {
+   background: url(assets/images/pattern-lines.svg);
+   width: 100%;
+   background-position: center;
+
+}
+
+.ticket {
+    min-width: 600px;
+    height: 50vh;
+background: url(assets/images/pattern-ticket.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.ticket-head {
+margin-top: 20px;
+}
+
+.ticket-container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+
+}
+
+#serial-number {
+    transform: rotate(90deg);
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    color: hsl(245, 15%, 58%);
+
+
+}
+
+#creation-date {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+.back-squiggly img{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: -1;
+
+}
+
+.back-circle img{
+    position: absolute;
+   left: 0;
+   top: -100px;
+   z-index: -1;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profile-photo {
+    padding-left: 20px;
+}
+
+
+.profile-photo img {
+    width: 50px;
+height: 50px;
+border-radius: 10px;
+
+}
+
+.card-details {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+#email-error {
+    color: firebrick;
+    font-size: 12px;
+}
+
+
+.foot img{
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    z-index: -1;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-email {
+   color: hsl(7, 86%, 67%);
+}
+
+#user-name {
+   color: hsl(7, 86%, 67%);
+   font: 20px;
+}
+
+
+/* MEDIA QUERY SECTION */
+
+@media screen and (max-width: 480px) {
+    .back-circle img {
+    width: 100px;
+    top: -30px;
+    }
+
+    .back-squiggly img {
+    width: 150px;
+    }
+
+   .hero-text p {
+    width: 100%;
+
+   }
+
+   .foot img {
+    width: 200px;
+    bottom: 0;
+   }
+
+
+/* TICKET RE-ADJUSTMENT */
+.ticket {
+width: 100px;
+height: 20vh;
+background: url(assets/images/pattern-ticket.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.ticket-head img {
+    width: 100px;
+}
+
+
+.ticket-container {
+display: flex;
+gap: 100px;
+justify-content: flex-start;
+padding: 5px;
+margin-left: 120px;
+margin-top: -10px;
+
+}
+
+
+
+#serial-number {
+    transform: rotate(90deg);
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    color: hsl(245, 15%, 58%);
+
+
+}
+
+#creation-date {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    margin-left: 110px;
+    margin-top: 25px;
+    
+}
+
+.profile-photo img {
+    width: 40px;
+    height: auto;
+}
+
+.card-details {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+
+.card-details img{
+    width: 10px;
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+     .back-circle img {
+    width: 100px;
+    top: -30px;
+    }
+
+    .back-squiggly img {
+    width: 150px;
+    }
+
+   .hero-text p {
+    width: 100%;
+
+   }
+
+   .foot img {
+    width: 200px;
+    bottom: 0;
+   }
+
+
+/* TICKET RE-ADJUSTMENT */
+.ticket {
+width: 100px;
+height: 20vh;
+background: url(assets/images/pattern-ticket.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.ticket-head img {
+    width: 150px;
+}
+
+
+.ticket-container {
+display: flex;
+gap: 100px;
+justify-content: flex-start;
+padding: 5px;
+margin-left: 120px;
+margin-top: -5px;
+
+}
+
+
+
+#serial-number {
+    transform: rotate(90deg);
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    color: hsl(245, 15%, 58%);
+
+
+}
+
+#creation-date {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    margin-left: 110px;
+    margin-top: 10px;
+    
+}
+
+.profile-photo img {
+    width: 40px;
+    height: auto;
+}
+
+.card-details {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+.card-details img{
+    width: 10px;
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+}
+
+
+@media screen and(min-width: 769px) and (max-width: 1024px) {
+     .back-circle img {
+    width: 100px;
+    top: 0px;
+    }
+
+    .back-squiggly img {
+    width: 150px;
+    }
+
+   .hero-text p {
+    width: 100%;
+
+   }
+
+   .foot img {
+    width: 200px;
+    bottom: 0;
+   }
+
+
+/* TICKET RE-ADJUSTMENT */
+.ticket {
+width: 100px;
+height: 20vh;
+background: url(assets/images/pattern-ticket.svg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.ticket-head img {
+    width: 100px;
+}
+
+
+
+.ticket-container {
+display: flex;
+gap: 100px;
+justify-content: flex-start;
+padding: 5px;
+margin-left: 120px;
+
+}
+
+
+
+#serial-number {
+    transform: rotate(90deg);
+    font-size: 12px;
+    margin-bottom: 0.1rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    color: hsl(245, 15%, 58%);
+
+
+}
+
+#creation-date {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    margin-left: 150px;
+
+    
+}
+
+.profile-photo img {
+    width: 40px;
+    height: auto;
+}
+
+.card-details {
+    display: flex;
+    gap: 2px;
+    margin-top: 5px;
+}
+.card-details img{
+    width: 10px;
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+}
+
+
+
