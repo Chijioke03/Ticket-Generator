@@ -76,16 +76,11 @@ localStorage.setItem("user", JSON.stringify(userData))
 
 
 genBtn.addEventListener("click", ()=> {
-if (userData.name === "" || userData.email === "" || userData.github === "") {
-emailInput.style.borderColor = "firebrick"
-nameInput.style.borderColor = "firebrick"
-gitInput.style.borderColor = "firebrick"
-} else {
+
 window.location.href = "index.html"
 
 
 
-}   
 })
 
 
